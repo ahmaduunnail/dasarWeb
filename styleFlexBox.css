@@ -5,15 +5,34 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     line-height: 1.65;
     padding-bottom: 1000px;
+    background: url(img/bunga1.jpg);
 }
 
 .container-satu {
-    width: 800px;
+    max-width: 1000px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-satu {
+    order: 1; /* Add this line */
+    width: 400px;
+    margin: 20px 20px 0 0;
+}
+
+.kolom-utama {
+    order: 2; /* Add this line */
+    margin: 20px 20px 0 0;
+}
+
+.sidebar-satu:last-child {
+    order: 3; /* Add this line */
+    margin: 20px 20px 0 0;
 }
