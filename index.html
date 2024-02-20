@@ -1,26 +1,89 @@
 <html>
   <head>
-    <title>format text CSS</title>
-    <link rel="stylesheet" type="" href="styleText.css" />
+    <title>Position CSS</title>
+    <link rel="stylesheet" type="text/css" href="stylePosition.css" />
   </head>
   <body>
-    <p class="tulisan_warna">Mengatur format text dengan CSS</p>
-    <p class="par1">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborun. 
-      
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborun.
+    <h2>position: static;</h2>
+    <p>
+      Position static digunakan untuk mengatur element menjadi statis secara
+      default. Elemen akan mengikuti posisis normal secara default, elemen tidak
+      dipengaruhi oleh properti seperti top, bottom, left dan right.;
     </p>
+
+    <div class="static">Elemen ini diatur menggunakan posisis: static</div>
+    <br /><br /><br /><br />
+    <h2>position: relative;</h2>
+    <p>
+      Sebuah elemen HTMl yang menggunakan position relative akan terletak pada
+      posisi normal. Mengatur properti atas, kanan bawah, dan kiri dari elemen
+      yang diposisikan dengan "relatif" akan membuatnya jauh dari posisi
+      normalnya. Konten lain tidak akan disesuaikan agar sesuai dengan celah
+      yang ditinggalkan oleh elemen terebut.;
+    </p>
+
+    <div class="relative">Elemen ini diatur menggunakan posisi : relative;</div>
+    <br /><br /><br />
+    <h2>position: fixed;</h2>
+    <p>
+      Sebuah elemen HTML yang di setting dengan position fixed akan memiliki
+      sifat tetap, tanpa ada perbuahan bahkan jika halaman website di scroll.
+      Berlaku pengaturan left, bottom, top dan right pada position fixed;
+    </p>
+
+    <div class="fixed">Elemen ini diatur menggunakan posisi: fixed;</div>
+
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+    <br /><br /><br />
+
+    <h2>position: absolute;</h2>
+    <p>
+      Element HTML yang menggunakan position absolute akan diposisikan relatif
+      dengan element lain yang mendahuluinya yang terdekat, bukan relatif
+      terhadap layar secara normal.;
+    </p>
+
+    <div class="relative1">
+        Elemen ini diatur menggunakan posisi: relative;
+        <div class="absolute">Elemen ini diatur menggunakan position: absolute;</div>
+    </div>
+
+    <br /><br /><br />
+    <br /><br /><br />
+
+    <h2>positon: sticky</h2>
+    <p>
+      Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana posisi sticky
+      bekerja.
+    </p>
+    <p>
+      Catatan: untuk IE/Edge 15 dan versi yang lebih lama tidak mendukung
+      poisisi sticky bekerja
+    </p>
+
+    <div class="sticky">Halo Aku adalah sticky!</div>
+
+    <div style="padding-bottom: 2000px">
+      <p>
+        Dalam contoh ini, elemen sticky menempel pada posisis paling atas
+        halaman (top:0), keita mencapai posisis scroollnya.
+      </p>
+      <p>Cobalah untuk melakukan scroll.</p>
+      <p>
+        Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Omnis soluta et porro laborum sed! Officia, provident!
+        Praesentium, itaque id fuga numquam beatae quaerat quisquam, obcaecati
+        dolores illo aliquid dolorem quod.
+      </p>
+      <p>
+        Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Assumenda aliquid veritatis sequi dolorum, et
+        distinctio at eaque a odio id ullam magni tempora dignissimos ea impedit
+        nesciunt. Repellat, tempore ex.
+      </p>
+    </div>
   </body>
 </html>
