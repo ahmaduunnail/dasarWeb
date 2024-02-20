@@ -20,6 +20,7 @@ h2 {
 }
 
 body {
-    background: lightcyan;
+    background: url('bunga2.jpg'), url(img/bunga1.jpg);
+    background-repeat: no-repeat, repeat;
     color: white;
 }
