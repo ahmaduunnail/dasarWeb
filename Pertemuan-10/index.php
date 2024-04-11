@@ -27,7 +27,9 @@
                 echo "<tr>
                             <td>" . $no++ . "</td><td>" . $row['nama'] . "</td>
                             <td>" . $kelamin . "</td><td>" . $row['alamat'] . "</td>
-                            <td>" . $row['no_telp'] . "</td><td><a href='#' onclick='konfirmasiHapus(" . $row['id'] . ", \"" . $row['nama'] . "\")'>Hapus</a></td>
+                            <td>" . $row['no_telp'] . "</td>
+                            <td><a href='edit.php?id=". $row['id'] ."'>Edit</a> | 
+                            <a href='#' onclick='konfirmasiHapus(" . $row['id'] . ", \"" . $row['nama'] . "\")'>Hapus</a></td>
                             </tr>";
             }
             echo "</table>";
