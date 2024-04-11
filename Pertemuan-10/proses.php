@@ -29,6 +29,22 @@ if ($aksi == "tambah") {
     } else {
         echo "ID tidak valid";
     }
+} else if ($aksi == "hapus") {
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+
+        $query = "DELETE FROM anggota WHERE id='$id'";
+        if (mysqli_query($koneksi, $query)) {
+            header("location:index.php");
+            exit();
+        } else {
+            echo "Gagal menghaus data: " . mysqli_error($koneksi);
+        }
+    } else {
+        echo "ID tidak valid.";
+    }
+} else {
+    header("location:index.php");
 }
 
 mysqli_close($koneksi);

@@ -43,7 +43,7 @@
         function konfirmasiHapus(id, nama) {
             var konfirmasi = confirm("Apakah anda yakin ingin menghapus data dengan Nama " + nama + "?");
             if (konfirmasi) {
-                window.location.href = "proses.php?aksi=hapus&id=" = id;
+                window.location.href = "proses.php?aksi=hapus&id=" + id;
             }
         }
     </script>
