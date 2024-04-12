@@ -23,7 +23,7 @@ if ($salt !== null && $hashed_password !== null) {
 
     if (password_verify($combined_password, $hashed_password)) {
         $_SESSION['username'] = $row['username'];
-        $_SESSION['level'] = $row['password'];
+        $_SESSION['level'] = $row['level'];
         header("location:index.php");
     } else {
         pesan('danger', "Login gagal. Password Anda Salah!");
