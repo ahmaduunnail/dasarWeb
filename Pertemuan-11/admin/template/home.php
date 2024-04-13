@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <h5 class="card-title">ANGGOTA</h5>
                             <p class="card-text">Total anggota sejumlah <?= $row_anggota['jml']; ?></p>
-                            <a href="index.php?page=anggota" class="btn btn-primary"><i class="fa fa-users" aria-hidden="true"></i>Kelola</a>
+                            <a href="index.php?page=anggota" class="btn btn-primary"><i class="bi bi-people" aria-hidden="true"></i> Kelola</a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title">JABATAN</h5>
                             <p class="card-text">Total jabatan sejumlah <?= $row_jabatan['jml']; ?></p>
-                            <a href="index.php?page=jabatan" class="btn btn-primary"><i class="fa fa-puzzle-piece"></i>Kelola</a>
+                            <a href="index.php?page=jabatan" class="btn btn-primary"><i class="bi bi-puzzle" aria-hidden="true"></i> Kelola</a>
                         </div>
                     </div>
                 </div>

@@ -108,7 +108,7 @@ include "fungsi/pesan_kilat.php";
     <link href="sign-in.css" rel="stylesheet">
 </head>
 
-<div class="container">
+<div class="container-fluid col-3">
 
     <body class="d-flex align-items-center py-4 bg-body-tertiary">
         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">

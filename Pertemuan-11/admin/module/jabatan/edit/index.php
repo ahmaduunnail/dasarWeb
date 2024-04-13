@@ -34,11 +34,11 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">
-                            <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                            <i class="bi bi-floppy" aria-hidden="true"></i>
                             Ubah
                         </button>
                         <a href="index.php?page=jabatan" class="btn btn-secondary">
-                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <i class="bi bi-x" aria-hidden="true"></i>
                             Batal
                         </a>
                     </form>

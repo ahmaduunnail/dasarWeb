@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        <i class="fa bi-plus" aria-hidden="true"></i>
+                        <i class="bi bi-plus" aria-hidden="true"></i>
                         Tambah Jabatan
                     </button>
                 </div>
@@ -51,8 +51,8 @@
                                 <th><?= $row['jabatan'] ?></th>
                                 <th><?= $row['keterangan'] ?></th>
                                 <td>
-                                    <a href="index.php?page=jabatan/edit&id=<?php echo $row['id'] ?>" class="btn btn-warning btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
-                                    <a href="fungsi/hapus.php?jabatan=hapus&id=<?php echo $row['id'] ?>" onclick="javascript:return confirm('Hapus Data Jabatan?');" class="btn btn-danger btn-xs"><i class="fa fa-trach-o"></i> Hapus</a>
+                                    <a href="index.php?page=jabatan/edit&id=<?php echo $row['id'] ?>" class="btn btn-warning btn-xs"><i class="bi bi-pencil-square" aria-hidden="true"></i> Edit</a>
+                                    <a href="fungsi/hapus.php?jabatan=hapus&id=<?php echo $row['id'] ?>" onclick="javascript:return confirm('Hapus Data Jabatan?');" class="btn btn-danger btn-xs"><i class="bi bi-trash" aria-hidden="true"></i> Hapus</a>
                                 </td>
                             </tr>
                         <?php
@@ -84,8 +84,8 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Close</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Simpan</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="bi bi-x" aria-hidden="true"></i> Close</button>
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-floppy" aria-hidden="true"></i> Simpan</button>
                             </div>
                         </form>
                     </div>
